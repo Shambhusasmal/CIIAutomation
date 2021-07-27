@@ -1,4 +1,4 @@
-package CIIAutomation.CIIAutomation;
+package automationCII;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

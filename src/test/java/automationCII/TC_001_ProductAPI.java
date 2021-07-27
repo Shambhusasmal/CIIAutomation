@@ -1,4 +1,4 @@
-package CIIAutomation.CIIAutomation;
+package automationCII;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,11 +10,11 @@ import io.restassured.response.Response;
 
 
 
-public class TC_001_GET_Method {
+public class TC_001_ProductAPI {
 
 	
 	
-	@Test
+	@Test(groups = { "functest"})
 	
 	void ProductAPI()
 	{

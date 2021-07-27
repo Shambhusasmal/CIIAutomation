@@ -1,4 +1,4 @@
-package CIIAutomation.CIIAutomation;
+package automationCII;
 
 import java.util.HashMap;
 import java.util.Map;

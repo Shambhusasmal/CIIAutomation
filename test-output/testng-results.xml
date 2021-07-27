@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12" started-at="2021-06-25T06:09:16Z" finished-at="2021-06-25T06:09:16Z">
+  <suite name="Suite1" duration-ms="5823" started-at="2021-07-27T12:13:18Z" finished-at="2021-07-27T12:13:24Z">
     <groups>
+      <group name="functest">
+        <method signature="TC_001_ProductAPI.ProductAPI()[pri:0, instance:automationCII.TC_001_ProductAPI@6a4f787b]" name="ProductAPI" class="automationCII.TC_001_ProductAPI"/>
+        <method signature="TC_002_ContentAPI.PublishedTest()[pri:0, instance:automationCII.TC_002_ContentAPI@685cb137]" name="PublishedTest" class="automationCII.TC_002_ContentAPI"/>
+        <method signature="TC_003_TestAPI.LaunchIELTSi()[pri:0, instance:automationCII.TC_003_TestAPI@6a41eaa2]" name="LaunchIELTSi" class="automationCII.TC_003_TestAPI"/>
+      </group> <!-- functest -->
     </groups>
-    <test name="Default test" duration-ms="12" started-at="2021-06-25T06:09:16Z" finished-at="2021-06-25T06:09:16Z">
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test name="GetElibilityGroup" duration-ms="5823" started-at="2021-07-27T12:13:18Z" finished-at="2021-07-27T12:13:24Z">
+      <class name="automationCII.TC_002_ContentAPI">
+        <test-method status="PASS" signature="PublishedTest()[pri:0, instance:automationCII.TC_002_ContentAPI@685cb137]" name="PublishedTest" duration-ms="334" started-at="2021-07-27T12:13:22Z" finished-at="2021-07-27T12:13:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PublishedTest -->
+      </class> <!-- automationCII.TC_002_ContentAPI -->
+      <class name="automationCII.TC_001_ProductAPI">
+        <test-method status="PASS" signature="ProductAPI()[pri:0, instance:automationCII.TC_001_ProductAPI@6a4f787b]" name="ProductAPI" duration-ms="3991" started-at="2021-07-27T12:13:18Z" finished-at="2021-07-27T12:13:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductAPI -->
+      </class> <!-- automationCII.TC_001_ProductAPI -->
+      <class name="automationCII.TC_003_TestAPI">
+        <test-method status="PASS" signature="LaunchIELTSi()[pri:0, instance:automationCII.TC_003_TestAPI@6a41eaa2]" name="LaunchIELTSi" duration-ms="1372" started-at="2021-07-27T12:13:23Z" finished-at="2021-07-27T12:13:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchIELTSi -->
+      </class> <!-- automationCII.TC_003_TestAPI -->
+    </test> <!-- GetElibilityGroup -->
+  </suite> <!-- Suite1 -->
 </testng-results>
