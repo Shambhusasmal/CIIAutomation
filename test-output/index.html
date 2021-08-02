@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite1">
-              <span class="suite-name border-passed">Suite1</span>
+              <span class="suite-name border-failed">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="automationCII.TC_002_ContentAPI" hash-for-method="PublishedTest">PublishedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,11 +124,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="automationCII.TC_001_ProductAPI" hash-for-method="ProductAPI">ProductAPI</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="automationCII.TC_002_ContentAPI" hash-for-method="PublishedTest">PublishedTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
                   </li>
                 </ul>
@@ -127,21 +136,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
-          <div class="suite-Suite1-class-passed">
+          <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">automationCII.TC_003_TestAPI</span>
+              <img src="failed.png"/>
+              <span class="class-name">automationCII.TC_002_ContentAPI</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LaunchIELTSi">
-                  </a> <!-- LaunchIELTSi -->
-                  <span class="method-name">LaunchIELTSi</span>
+                  <a name="PublishedTest">
+                  </a> <!-- PublishedTest -->
+                  <span class="method-name">PublishedTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [503]
+	at automationCII.TC_002_ContentAPI.PublishedTest(TC_002_ContentAPI.java:48)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-passed -->
+          </div> <!-- suite-Suite1-class-failed -->
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -160,14 +173,14 @@
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">automationCII.TC_002_ContentAPI</span>
+              <span class="class-name">automationCII.TC_003_TestAPI</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="PublishedTest">
-                  </a> <!-- PublishedTest -->
-                  <span class="method-name">PublishedTest</span>
+                  <a name="LaunchIELTSi">
+                  </a> <!-- LaunchIELTSi -->
+                  <span class="method-name">LaunchIELTSi</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -249,22 +262,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ProductAPI')
-data.setCell(0, 2, 'automationCII.TC_001_ProductAPI')
-data.setCell(0, 3, 3991);
+data.setCell(0, 1, 'LaunchIELTSi')
+data.setCell(0, 2, 'automationCII.TC_003_TestAPI')
+data.setCell(0, 3, 12464);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LaunchIELTSi')
-data.setCell(1, 2, 'automationCII.TC_003_TestAPI')
-data.setCell(1, 3, 1372);
+data.setCell(1, 1, 'ProductAPI')
+data.setCell(1, 2, 'automationCII.TC_001_ProductAPI')
+data.setCell(1, 3, 9281);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'PublishedTest')
 data.setCell(2, 2, 'automationCII.TC_002_ContentAPI')
-data.setCell(2, 3, 334);
+data.setCell(2, 3, 910);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -315,15 +328,17 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">automationCII.TC_002_ContentAPI</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">PublishedTest</span>
-                <span class="method-start">4016 ms</span>
+                <span class="method-start">9288 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automationCII.TC_003_TestAPI</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LaunchIELTSi</span>
-                <span class="method-start">4356 ms</span>
+                <span class="method-start">10218 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="GetElibilityGroup(failed)">
+    <groups>
+      <run>
+        <include name="functest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="automationCII.TC_002_ContentAPI">
+        <methods>
+          <include name="PublishedTest"/>
+        </methods>
+      </class> <!-- automationCII.TC_002_ContentAPI -->
+    </classes>
+  </test> <!-- GetElibilityGroup(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
